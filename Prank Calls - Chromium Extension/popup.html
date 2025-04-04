@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>Mensajes Aleatorios</title>
+  <link rel="stylesheet" href="https://unpkg.com/thesims.css">
   <link rel="stylesheet" href="popup.css">
 </head>
+
 <body>
-  <div class="container">
-    <div class="emoji" id="emoji">😊</div>
-    <h1 id="titulo">Bienvenido</h1>
-    <p id="mensaje">Presiona el botón para ver un mensaje aleatorio</p>
+  <div class="main-container">
+    <div class="content-container">
+      <div class="emoji-container">
+        <div class="emoji-background"></div>
+        <div class="emoji" id="emoji">😊</div>
+      </div>
+      
+      <div class="text-container">
+        <h1 id="titulo">Bienvenido</h1>
+        <p id="mensaje">Presiona el botón para ver un mensaje aleatorio</p>
+      </div>
+    </div>
     
     <div id="input-container" style="display:none;">
       <input type="text" id="user-input" placeholder="Escribe tu respuesta...">
     </div>
     
-    <button id="nuevo-mensaje">Nuevo Mensaje</button>
-    <button id="cerrar">Cerrar</button>
+    <div id="button-container" class="button-container">
+      <!-- Botones se generan dinámicamente aquí -->
+    </div>
   </div>
   <script src="popup.js"></script>
 </body>
+
 </html>

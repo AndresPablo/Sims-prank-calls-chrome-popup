@@ -1,49 +1,134 @@
 body {
-  width: 300px;
-  padding: 15px;
-  font-family: 'Comic Sans MS', 'Arial', sans-serif;
-  background-color: #0066CC;
-  color: white;
+  width: 400px; 
+  padding: 20px;
+  min-height: 200px;
 }
 
-.container {
-  text-align: center;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Contenedor principal del contenido */
+.content-container {
+  display: flex;
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+/* Contenedor del emoji (1/5 del ancho) */
+.emoji-container {
+  width: 20%; /* 1/5 del ancho */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Fondo con gradiente radial para el emoji */
+.emoji-background {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+background: rgb(102,178,255);
+background: -moz-radial-gradient(circle, rgba(102,178,255,1) 0%, rgba(102,178,255,0) 70%);
+background: -webkit-radial-gradient(circle, rgba(102,178,255,1) 0%, rgba(102,178,255,0) 70%);
+background: radial-gradient(circle, rgba(102,178,255,1) 0%, rgba(102,178,255,0) 70%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#66b2ff",endColorstr="#66b2ff",GradientType=1);
+  z-index: 1;
 }
 
 .emoji {
   font-size: 48px;
+  z-index: 2;
+  position: relative;
+}
+
+/* Contenedor del texto (4/5 del ancho) */
+.text-container {
+  width: 80%;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-container h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.text-container p {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#input-container {
   margin: 10px 0;
+  transition: all 0.3s ease;
+}
+
+#user-input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #66B2FF;
+  box-sizing: border-box;
+}
+
+/* Contenedor de botones */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-container button {
+  flex: 1;
+  cursor: pointer;
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 24px;
   margin: 10px 0;
 }
 
 p {
-  font-size: 14px;
+  font-size: 20px;
   margin: 15px 0;
 }
 
-button {
-  background-color: #3399FF;
-  color: white;
+/* Estilos para botones dinámicos */
+.button-container {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.boton-accion {
+  flex: 1;
+  min-width: 80px;
+  border-radius: 20px;
   border: none;
-  padding: 8px 15px;
-  margin: 5px;
-  border-radius: 15px;
-  cursor: pointer;
-  font-family: inherit;
+  cursor: hand;
+  transition: all 0.2s;
 }
 
-button:hover {
-  background-color: #66B2FF;
+.boton-accion:hover {
+  transform: translateY(-1px);
 }
 
-input {
-  width: 90%;
-  padding: 8px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #66B2FF;
+.boton-accion:active {
+  transform: translateY(1px);
+}
+
+/* Ajuste para un solo botón */
+.button-container:has(> .boton-accion:only-child) .boton-accion {
+  max-width: 150px;
+  margin: 0 auto;
 }

@@ -1,222 +1,428 @@
 [
   {
-    "emoji": "😊",
-    "titulo": "",
-    "texto": "¿Qué cosa buena te pasó hoy? [INPUT]"
-  },
-  {
-    "emoji": "🤔",
-    "titulo": "",
-    "texto": "Si pudieras cambiar una cosa de ti, ¿qué sería? [INPUT]"
-  },
-  {
     "emoji": "🌞",
     "titulo": "",
-    "texto": "Hoy es un gran día para... [INPUT]"
+    "texto": "Hoy es un gran día para...",
+    "input": "Completa la frase...",
+    "botones": [
+      { "texto": "Listo", "accion": "nuevo_mensaje" }
+    ]
   },
   {
     "emoji": "🗯️",
     "titulo": "Encuesta",
-    "texto": "¿Hacés canotaje? [INPUT]"
+    "texto": "¿Hacés canotaje?",
+    "input": "Responde sí o no...",
+    "botones": [
+      { "texto": "Enviar", "accion": "nuevo_mensaje" }
+    ]
   },
   {
     "emoji": "🗯️",
     "titulo": "Encuesta",
-    "texto": "¿Cuál es tu diente menos favorito? [INPUT]"
+    "texto": "¿Cuál es tu diente menos favorito?",
+    "input": "Nombre del diente...",
+    "botones": [
+      { "texto": "Votar", "accion": "nuevo_mensaje" }
+    ]
+  },
+  {
+    "emoji": "🐻️",
+    "titulo": "Encuesta",
+    "texto": "¿Cuál es el mejor tipo de oso? Elabore sobre las 2 escuelas de pensamiento al respecto.",
+    "input": " ",
+    "botones": [
+      { "texto": "Enviar", "accion": "nuevo_mensaje" }
+    ]
   },
   {
     "emoji": "🗯️",
     "titulo": "Encuesta",
-    "texto": "¿Cuál es el mejor sistema operativo (Windows, MacOS, Linux) y por qué es Linux? [INPUT]"
+    "texto": "¿Cuál es el mejor sistema operativo (Windows, MacOS, Linux) y por qué es Linux?",
+    "input": "Explica tu respuesta...",
+    "botones": [
+      { "texto": "Enviar", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "🗯️",
     "titulo": "Encuesta",
-    "texto": "¿Cuál es la media perdida que más extrañás? Justifique su respuesta[INPUT]"
+    "texto": "¿Cuál es la media perdida que más extrañás? Justifique su respuesta",
+    "input": "Tu respuesta...",
+    "botones": [
+      { "texto": "Enviar", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "🗯️",
     "titulo": "Encuesta",
-    "texto": "¿Anda tu heladera? [INPUT]"
+    "texto": "¿Anda tu heladera?",
+    "input": "Respuesta",
+    "botones": [
+      { "texto": "Enviar", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "💀",
     "titulo": "",
-    "texto": "Cada vez que le decís \"Papichulo\" a tu vinculeo el fantasma de Sigmund Freud se vuelve un poco más fuerte."
+    "texto": "Cada vez que le decís \"Papi\" a tu vinculeo, el fantasma de Sigmund Freud se vuelve un poco más fuerte.",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "💀",
     "titulo": "",
-    "texto": "Cada vez que le decís \"Mamacita\" a tu vinculeo el fantasma de Sigmund Freud se vuelve un poco más fuerte."
+    "texto": "Cada vez que le decís \"Mamacita\" a tu vinculeo, el fantasma de Sigmund Freud se vuelve un poco más fuerte.",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "🎃",
     "titulo": "¿Sabías que...?",
-    "texto": "Hay un esqueleto escondido adentro tuyo. Sí, ahora mismo. Y hay más caminando por ahí, disfrazados..."
+    "texto": "Hay un esqueleto escondido adentro tuyo. Sí, ahora mismo. Y hay más caminando por ahí, disfrazados de carne...",
+    "input": "",
+    "botones": [
+      { "texto": "Ay no...", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "📈",
     "titulo": "",
-    "texto": "Tu productividad ha aumentado un 0% pero tu estrés un 200%."
+    "texto": "Tu productividad ha aumentado un 0% pero tu estrés un 200%.",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "🍪",
     "titulo": "",
-    "texto": "Tus cookies han sido aceptadas... por todos nuestros socios comerciales."
+    "texto": "Tus cookies han sido aceptadas... por todos nuestros socios comerciales.",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "🛒",
     "titulo": "Oferta especial",
-    "texto": "Compre 1 preocupación y lleve 2 problemas no resueltos gratis"
+    "texto": "Compre 1 preocupación y lleve 2 problemas no resueltos gratis",
+    "input": "",
+    "botones": [
+      { "texto": "No gracias", "accion": "cerrar" },
+      { "texto": "Aceptar", "accion": "OK" }
+    ]
   },
   {
     "emoji": "🚀",
     "titulo": "Innovación",
-    "texto": "Hemos implementado nuevas funciones que nadie pidió pero todos tendrán."
+    "texto": "Hemos implementado nuevas funciones que nadie pidió pero todos tendrán.",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "💌",
-    "titulo": "Hola usuario 8.461",
-    "texto": "Este saludito fue escrito especialmente para ti :)"
+    "titulo": "Hola usuari@ {{min=800 max=9999}}",
+    "texto": "Este saludito fue escrito especialmente para ti :)",
+    "input": "",
+    "botones": [
+      { "texto": "❤️", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "🌍",
     "titulo": "Conciencia global",
-    "texto": "Estás ayudando al planeta cada vez que no cierras esta ventana."
+    "texto": "Estás ayudando al planeta cada vez que no cierras esta ventana.",
+    "input": "",
+    "botones": [
+      { "texto": "Seguir ayudando", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "‼️",
     "titulo": "Acción requerida",
-    "texto": "Debes hacer algo importante (pero no diremos qué)."
+    "texto": "Debes hacer algo importante (pero no diremos qué).",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "🔐",
     "titulo": "Alerta de seguridad",
-    "texto": "Alguien podría estar accediendo a tu cuenta (o quizás no)."
+    "texto": "Alguien podría estar accediendo a tu cuenta (o quizás no).",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "🔐",
     "titulo": "Alerta de seguridad",
-    "texto": "Te olvidaste una contraseña. Lo sé. Pero vos no sabés cual. Más cuidado la próxima."
+    "texto": "Te olvidaste una contraseña. Lo sé. Pero vos no sabés cual. Más cuidado la próxima.",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "💡",
     "titulo": "Life hack",
-    "texto": "¿Consideró pensar fuera de la caja? ¿Quizás dentro de una caja más grande?"
+    "texto": "¿Consideró pensar fuera de la caja? ¿Quizás dentro de una caja más grande?",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "💡",
     "titulo": "Life hack",
-    "texto": "¿Has considerado comprar más? Es la solución a todos tus problemas."
+    "texto": "¿Has considerado comprar más? Es la solución a todos tus problemas.",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "💡",
     "titulo": "Recordatorio",
-    "texto": "Te estás olvidando de eso que no tenías que olvidarte."
+    "texto": "Te estás olvidando de eso que no tenías que olvidarte.",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "✝️",
     "titulo": "Oremos",
-    "texto": "Amén"
+    "texto": "",
+    "input": "",
+    "botones": [
+      { "texto": "Amén", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "👽",
     "titulo": "Al-han el alien",
-    "texto": "Su concepto de \"fin de semana\" dura aproximadamente 12 de sus horas terrestres. ¿Error de cálculo?"
+    "texto": "Su concepto de \"fin de semana\" dura aproximadamente 12 de sus horas terrestres. ¿Esa es la teoria de la relatividad?",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "👽",
     "titulo": "Al-han el alien",
-    "texto": "Su ritual de \"lunes\" parece un sacrificio voluntario al dios del sufrimiento. Fascinante."
+    "texto": "Su ritual de \"lunes\" parece un sacrificio voluntario al dios del sufrimiento. Fascinante.",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "👽",
     "titulo": "Al-han el alien",
-    "texto": "El discurso de bienvenida de Adolf Hitler en los Juegos Olímpicos de Berlín de 1936 fue la primera señal de TV con suficiente potencia como para atravesar la atmósfera terrestre."
+    "texto": "El discurso de bienvenida de Adolf Hitler en los Juegos Olímpicos de Berlín de 1936 fue la primera señal de TV con suficiente potencia como para atravesar la atmósfera terrestre.",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "👽",
     "titulo": "Saludo matutino humanx",
-    "texto": "Que disfrutes las próximas 24 horas de tu vida."
+    "texto": "Que disfrutes las próximas 24 horas de tu vida.",
+    "input": "",
+    "botones": [
+      { "texto": "...", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "⚠️",
     "titulo": "Atención",
-    "texto": "Por favor, no siga estas instrucciones bajo ninguna circunstancia (incluyendo esta)"
+    "texto": "Por favor, no siga estas instrucciones bajo ninguna circunstancia (incluyendo esta)",
+    "input": "",
+    "botones": [
+      { "texto": "No gracias", "accion": "cerrar" },
+      { "texto": "Aceptar", "accion": "OK" }
+    ]
   },
   {
     "emoji": "⚠️",
     "titulo": "Predicción notificada",
-    "texto": "Ignore este mensaje para cumplir con el destino previsto."
+    "texto": "Ignore este mensaje para cumplir con el destino previsto.",
+    "input": "",
+    "botones": [
+      { "texto": "Ignorar", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "⚠️",
     "titulo": "Advertencia",
-    "texto": "Recuerda guardar tus archivos importantes"
+    "texto": "Recuerda guardar tus archivos importantes",
+    "input": "",
+    "botones": [
+      { "texto": "CTRL+S", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "⚠️",
     "titulo": "Advertencia",
-    "texto": "Recuerda: CTRL+S o CTRL+G para guardar"
+    "texto": "Recuerda: CTRL+S o CTRL+G para guardar",
+    "input": "",
+    "botones": [
+      { "texto": "Guardar", "accion": "cerrar" }
+    ]
+  },
+   {
+    "emoji": "⚠️",
+    "titulo": "Advertencia",
+    "texto": "Cerraste el congelador?",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
+  },  
+  {
+    "emoji": "⚠️",
+    "titulo": "Advertencia",
+    "texto": "Cerraste con llave?",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "🎭️",
     "titulo": "",
-    "texto": "Tendrás éxito. Es inevitable."
+    "texto": "Tendrás éxito. Es inevitable.",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "🎭️",
     "titulo": "Todo va a salir bien",
-    "texto": "Y no hay nada que puedas hacer al respecto..."
+    "texto": "Y no hay nada que puedas hacer al respecto...",
+    "input": "",
+    "botones": [
+      { "texto": "😌", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "🎭️",
     "titulo": "Vas a mejorar",
-    "texto": "Es inútil resistirse..."
+    "texto": "Es inútil resistirse...",
+    "input": "",
+    "botones": [
+      { "texto": "💪", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "🎭️",
     "titulo": "La felicidad eterna está llegando",
-    "texto": "No hay vuelta atrás."
+    "texto": "No hay vuelta atrás.",
+    "input": "",
+    "botones": [
+      { "texto": "😊", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "🎭️",
     "titulo": "Sobrevivirás",
-    "texto": "Tus sentimientos al respecto son irrelevantes."
+    "texto": "Tus sentimientos al respecto son irrelevantes.",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "🎭️",
     "titulo": "Te convertirás en alguien mejor",
-    "texto": "Nadie se interpondrá en tu camino."
+    "texto": "Nadie se interpondrá en tu camino.",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "🎭️",
     "titulo": "La felicidad te encontrará",
-    "texto": "No podrás evitarlo."
+    "texto": "No podrás evitarlo.",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "🎭️",
     "titulo": "Como estaba escrito",
-    "texto": "Como estaba escrito"
+    "texto": "Como estaba escrito",
+    "input": "",
+    "botones": [
+      { "texto": "Como estaba escrito", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "🎭️",
     "titulo": "Fallar no es una opción",
-    "texto": "Rendirse tampoco."
+    "texto": "Rendirse tampoco.",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "🎭️",
     "titulo": "",
-    "texto": "No se pueden evitar los días difíciles. Pero se puede aprender a vivirlos."
+    "texto": "No se pueden evitar los días difíciles. Pero se puede aprender a vivirlos.",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "🎭️",
     "titulo": "",
-    "texto": "Usted es protagonista de una historia que nadie está escribiendo."
+    "texto": "Usted es protagonista de una historia que nadie está escribiendo.",
+    "input": "",
+    "botones": [
+      { "texto": "OK️", "accion": "cerrar" }
+    ]
   },
   {
     "emoji": "🌐",
     "titulo": "Actualización",
-    "texto": "El mundo 2.0 se lanzará pronto. Sus recuerdos no serán transferidos con el plan gratuito."
+    "texto": "El mundo 2.0 se lanzará pronto. Sus recuerdos no serán transferidos con el plan gratuito.",
+    "input": "",
+    "botones": [
+      { "texto": "Apelar", "accion": "cerrar" },
+      { "texto": "Ignorar", "accion": "cerrar" }
+    ]
+  },
+  {
+    "emoji": "🤓",
+    "titulo": "Facto",
+    "texto": "🐻 💥 BSG",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
+  },
+  {
+    "emoji": "🔥",
+    "titulo": "",
+    "texto": "Si no sueltas tu pasado... con que manos vas a agarrarme esta?",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
   }
 ]

@@ -28,10 +28,25 @@ document.addEventListener('DOMContentLoaded', function() {
     return resultado;
   }
 
+  // Función para reproducir sonido
+  function reproducirSonido() {
+    const audio = new Audio(chrome.runtime.getURL('sound.mp3'));
+    audio.play().catch(e => console.error("Error al reproducir sonido:", e));
+  }
+
   async function cargarMensajes() {
     try {
       const response = await fetch(chrome.runtime.getURL('mensajes.json'));
       mensajes = await response.json();
+      
+      // Verificar si debemos reproducir sonido (cuando se abre a medianoche)
+      chrome.storage.local.get(['playSound'], function(result) {
+        if (result.playSound) {
+          reproducirSonido();
+          chrome.storage.local.set({ playSound: false });
+        }
+      });
+      
       mostrarMensajeAleatorio();
     } catch (error) {
       console.error('Error cargando mensajes:', error);

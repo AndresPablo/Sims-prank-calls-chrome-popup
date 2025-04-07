@@ -30,7 +30,7 @@
     "emoji": "🐻️",
     "titulo": "Encuesta",
     "texto": "¿Cuál es el mejor tipo de oso? Elabore sobre las 2 escuelas de pensamiento al respecto.",
-    "input": " ",
+    "input": "Tu respuesta...",
     "botones": [
       { "texto": "Enviar", "accion": "nuevo_mensaje" }
     ]
@@ -113,8 +113,8 @@
     "texto": "Compre 1 preocupación y lleve 2 problemas no resueltos gratis",
     "input": "",
     "botones": [
-      { "texto": "No gracias", "accion": "cerrar" },
-      { "texto": "Aceptar", "accion": "OK" }
+      { "texto": "Ignorar", "accion": "cerrar" },
+      { "texto": "Siguiente>", "accion": "OK" }
     ]
   },
   {
@@ -191,6 +191,15 @@
   },
   {
     "emoji": "💡",
+    "titulo": "Life hack",
+    "texto": "¿Sabias que hay mas de 24 horas en el dia? Estas horas 'prohibidas' son accesibles si dormis mas tarde.",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
+  },
+  {
+    "emoji": "💡",
     "titulo": "Recordatorio",
     "texto": "Te estás olvidando de eso que no tenías que olvidarte.",
     "input": "",
@@ -210,7 +219,7 @@
   {
     "emoji": "👽",
     "titulo": "Al-han el alien",
-    "texto": "Su concepto de \"fin de semana\" dura aproximadamente 12 de sus horas terrestres. ¿Esa es la teoria de la relatividad?",
+    "texto": "Su concepto de \"fin de semana\" dura aproximadamente 12 de sus horas terrestres. ¿Esa es la Teoria de la Relatividad?",
     "input": "",
     "botones": [
       { "texto": "OK", "accion": "cerrar" }
@@ -293,6 +302,15 @@
     "emoji": "⚠️",
     "titulo": "Advertencia",
     "texto": "Cerraste con llave?",
+    "input": "",
+    "botones": [
+      { "texto": "OK", "accion": "cerrar" }
+    ]
+  },
+  {
+    "emoji": "💩",
+    "titulo": "Recordatorio",
+    "texto": "Guardaste el cuchillo de la caca?",
     "input": "",
     "botones": [
       { "texto": "OK", "accion": "cerrar" }

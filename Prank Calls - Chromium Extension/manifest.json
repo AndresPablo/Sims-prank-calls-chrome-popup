@@ -1,8 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "Mensajes Aleatorios",
+  "name": "Midnight Popups",
   "version": "1.0",
   "description": "Muestra mensajes motivacionales aleatorios desde JSON",
+  "permissions": [
+    "storage",
+	"notifications",
+    "alarms"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -11,10 +19,10 @@
       "128": "icons/icon128.png"
     }
   },
-  "permissions": ["storage"],
   "web_accessible_resources": [{
     "resources": ["mensajes.json"],
-    "matches": []
+	"resources": ["sound.mp3"],
+    "matches": ["<all_urls>"]
   }],
   "icons": {
     "16": "icons/icon16.png",
@@ -23,7 +31,7 @@
   },
   "author": "Luis Andres Pablo",
   "homepage_url": "https://tusitio.com",
-  "short_name": "Prank Calls",
+  "short_name": "Midnight Popups",
   "offline_enabled": true,  // Si funciona sin internet
   "incognito": "split"     // Para modo incógnito
 }
